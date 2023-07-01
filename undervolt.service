@@ -1,0 +1,16 @@
+[Unit]
+Description=AMDPU undervolt service
+
+[Service]
+User=root
+Group=root
+
+GuessMainPID=no
+ExecStart=/bin/undervolt
+Restart=always
+RestartSec=15
+StartLimitInterval=200
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
