@@ -4,8 +4,8 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-chmod +x undervolt
-cp undervolt /bin/
+cp undervolt /usr/bin
+chmod +x /usr/bin/undervolt
 cp undervolt.service /etc/systemd/system/
 systemctl daemon-reload
 sleep 1
