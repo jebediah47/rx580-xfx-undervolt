@@ -6,7 +6,7 @@ User=root
 Group=root
 
 GuessMainPID=no
-ExecStart=/bin/undervolt
+ExecStart=/usr/bin/undervolt
 Restart=always
 RestartSec=15
 StartLimitInterval=200
